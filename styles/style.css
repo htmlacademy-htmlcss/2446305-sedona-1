@@ -30,6 +30,8 @@
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+
 }
 
 .main-header {}
@@ -95,14 +97,17 @@
 .page-main {}
 
 .welcome-quote {
-  background-image: url("../images/index-background.jpg");
+  background-color: #5b91b4;
+  background-image: url("../images/triangle.svg"), url("../images/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  list-style-image: none;
-  list-style-position: outside;
-  list-style: none;
-
+  text-align: center;
+  padding: 51px 0 82px;
+  background-size: 100% 57px, cover;
+  min-height: 352px;
+  background-position: left 0 bottom 0, center top;
 }
 
 .welcome-quote-image {
@@ -190,6 +195,8 @@
   font-weight: 700;
   line-height: 28px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-description {
@@ -197,11 +204,15 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  margin: 0;
+  padding: 0;
 }
 
 .description-image {
   display: block;
   background-color: #82b3d3;
+  margin: 0;
+  padding: 0;
 }
 
 .recommendation {
@@ -217,6 +228,8 @@
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .recommendation-desc {
@@ -225,6 +238,8 @@
   font-weight: 400;
   line-height: 26px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .recommendation-list {
@@ -247,6 +262,8 @@
   line-height: 28px;
   color: #000000;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .recommendation-desc {
@@ -254,9 +271,18 @@
   font-weight: 400;
   line-height: 21px;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
-.search {}
+.search {
+  background-color: red;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 88px;
+  padding-bottom: 116px;
+}
 
 .search-question {
   font-size: 30px;
@@ -264,6 +290,9 @@
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .search-item {
@@ -271,6 +300,8 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
@@ -299,6 +330,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+
 }
 
 .subscribe-title {
@@ -307,6 +339,8 @@
   line-height: 36px;
   color: #ffffff;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .subscribe-desc {
@@ -314,6 +348,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 
 .subscribe-form {}
@@ -334,8 +370,6 @@
 }
 
 .page-footer {
-  width: 1200px;
-  height: 120px;
   padding: 40px 70px 30px 70px;
   justify-content: center;
   background: #ffffff;
