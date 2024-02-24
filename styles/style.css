@@ -98,6 +98,14 @@ html {
   display: block;
 }
 
+.container-user-menu {
+  width: 268px;
+  height: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 171px;
+}
+
 .user-menu {
   margin: 0;
   padding: 0;
@@ -108,9 +116,13 @@ html {
 
 .user-menu-item {
   margin-left: auto;
+
 }
 
-.user-menu-link-1 {
+.user-menu-link-search {
+  width: 10px;
+  height: 20px;
+  background-color: red;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -120,10 +132,14 @@ html {
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
   display: block;
+  background-position: center center;
 }
 
-.user-menu-link-2 {
-  font-size: 20px;
+.user-menu-link-favourite {
+  background-color: red;
+  min-width: 10px;
+  height: 20px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 24px;
   color: #000000;
@@ -131,20 +147,24 @@ html {
   padding: 14px 24px;
   position: relative;
   background-repeat: no-repeat;
-  background-image: url(../images/like.svg);
+  background-image: url(../images/favourite.svg);
+  display: block;
+  background-position: center center;
 }
 
 
-.user-menu-link-3 {
+.user-menu-link-invitation {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  padding-left: 0;
 }
 
 .user-menu-item-bottom {
   font-family: "PT Sans", "Arial", sans-serif;
   padding-left: 25px;
+  padding-top: 6px;
   background-color: #756157;
   box-sizing: border-box;
   border-radius: 4px;
@@ -152,16 +172,24 @@ html {
   height: 36px;
   margin: 12px;
   font-size: 17px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .fav-count {
   color: #ffffff;
-  background-color: #9ed54b;
+  background-color: #7db54f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 20px;
   min-width: 20px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
   position: absolute;
+  top: 0;
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
@@ -194,7 +222,7 @@ html {
 }
 
 .slogan {
-  margin-bottom: 0 0 24px;
+  margin: 0 0 24px;
   font-size: 30px;
   font-weight: 700;
   line-height: 37px;
@@ -236,7 +264,6 @@ html {
   background-color: #82b3d3;
   width: 400px;
   text-align: center;
-  padding: 0;
   margin: 0;
   padding-top: 102px;
   padding-bottom: 67px;
