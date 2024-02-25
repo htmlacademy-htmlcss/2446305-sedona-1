@@ -116,13 +116,13 @@ html {
 
 .user-menu-item {
   margin-left: auto;
+  padding-top: 5px;
 
 }
 
 .user-menu-link-search {
   width: 10px;
   height: 20px;
-  background-color: red;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -136,7 +136,6 @@ html {
 }
 
 .user-menu-link-favourite {
-  background-color: red;
   min-width: 10px;
   height: 20px;
   font-size: 40px;
@@ -163,13 +162,12 @@ html {
 
 .user-menu-item-bottom {
   font-family: "PT Sans", "Arial", sans-serif;
-  padding-left: 25px;
-  padding-top: 6px;
+  padding-left: 18px;
+  padding-right: 13px;
+  padding-top: 8px;
   background-color: #756157;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 160px;
-  height: 36px;
   margin: 12px;
   font-size: 17px;
   display: flex;
@@ -446,7 +444,7 @@ html {
   box-sizing: border-box;
   display: inline-block;
   border: none;
-
+  border-radius: 4px;
 }
 
 .subscribe {
@@ -599,4 +597,90 @@ html {
   width: 114.9px;
   height: 32.9px;
   padding-right: 8px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+}
+
+
+.main-inner {
+  padding: 0;
+  margin: 0;
+}
+
+.inner-header {
+  background-color: #156194;
+  background-image: url(../images/foto-catalog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px 70px 70px 70px;
+}
+
+.inner-header-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0;
+  color: #ffffff;
+  text-align: left;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumbs-item {}
+
+.breadcrumbs-link {
+  color: #ffffff;
+  width: 114px;
+  height: 21px;
+}
+
+.catalog-products {}
+
+.catalog-filter {
+  margin: 0 auto;
+}
+
+.catalog-filter-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: flex-start;
+  width: 150px;
+}
+
+.catalog-filter-title {}
+
+.catalog-filter-list {}
+
+.catalog-filter-item {}
+
+.control {}
+
+.control-input {}
+
+.confirm-button {
+  background: #82b3d3;
+  color: #ffffff;
+  padding: 8px 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  width: 191px;
 }
