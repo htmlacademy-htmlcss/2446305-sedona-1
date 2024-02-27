@@ -649,28 +649,43 @@ html {
 
 .catalog-filter {
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  color: #ffffff;
 }
 
 .catalog-filter-group {
   border: none;
   padding: 0;
   margin: 0;
-  display: inline-flex;
-  align-items: flex-start;
   width: 150px;
+} 
+
+.price {
+  border: none;
 }
 
-.catalog-filter-title {}
+.catalog-filter-title {
+
+ 
+}
 
 .catalog-filter-list {}
 
-.catalog-filter-item {}
+.catalog-filter-item {
+  list-style-type: none;
+}
 
 .control {}
 
 .control-input {}
 
 .confirm-button {
+  border: none;
+}
+
+.confirm-button-link {
   background: #82b3d3;
   color: #ffffff;
   padding: 8px 50px;
@@ -683,4 +698,48 @@ html {
   border: none;
   border-radius: 4px;
   width: 191px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.inner-subscribe {
+  background-color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+  padding: 96px 258px 104px 258px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 96px;
+}
+
+
+.inner-subscribe-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.inner-field {
+  padding: 12px 20px;
+  align-items: center;
+  border-radius: 4px 0 0 4px;
+  background: #f2f2f2;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  width: 452px;
+  line-height: 24px;
+  padding-left: 18px;
+  min-height: 52px;
+  box-sizing: border-box;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
