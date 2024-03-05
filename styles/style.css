@@ -842,6 +842,14 @@ html {
   text-align: center;
 }
 
+.search-results {
+  display: flex;
+}
+
+.search-results-number {
+  text-transform: uppercase;
+}
+
 .pagination {
   display: flex;
   list-style: none;
@@ -852,6 +860,7 @@ html {
 
 .pagination-current {
   background-color: #f2f2f2;
+  color: #000000;
 }
 
 .pagination-item {
@@ -888,6 +897,11 @@ html {
   padding: 19px 20px;
   line-height: 16px;
   text-decoration: none;
+}
+
+.pagination-next {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .inner-subscribe {
