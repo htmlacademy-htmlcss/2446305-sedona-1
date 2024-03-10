@@ -642,7 +642,7 @@ html {
   background-image: url(../images/foto-catalog.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 48px 70px;
 }
 
 .inner-header-title {
@@ -709,8 +709,9 @@ html {
 .catalog-filter {
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  width: 1060px;
+  padding-top: 22px;
   color: #ffffff;
 }
 
@@ -725,17 +726,25 @@ html {
   border: none;
 }
 
-.catalog-filter-title {}
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+}
 
 .catalog-filter-list {
   padding: 0;
   display: flex;
   flex-direction: column;
+  gap: 16px;
+  margin-top: 37px;
 }
 
 .catalog-filter-item {
   list-style-type: none;
-
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
 }
 
 .checkbox-label {
@@ -776,11 +785,43 @@ html {
   display: block;
 }
 
+.control-input {}
+
+.control {
+  padding-left: 47px;
+}
+
+.control::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  left: 10px;
+  top: 0;
+}
+
+.control::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  background-color: #3f5e72;
+  ;
+  display: none;
+  border-radius: 50%;
+}
+
 .price {
   width: 287px;
 }
 
-.catalog-filter-title {}
+.control-input:checked+.control::after {
+  display: block;
+}
 
 .cost {
   display: flex;
@@ -797,6 +838,15 @@ html {
   border: none;
   box-sizing: border-box;
   padding: 12px 20px 12px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.catalog-filter-from {
+  position: absolute;
+  top: 13px;
+  left: 106px;
+  color: #333333;
 }
 
 .cost-till {
@@ -807,6 +857,15 @@ html {
   border: none;
   box-sizing: border-box;
   padding: 12px 20px 12px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.catalog-filter-till {
+  position: absolute;
+  top: 13px;
+  left: 248px;
+  color: #333333;
 }
 
 .container-cost {
@@ -896,47 +955,127 @@ html {
   padding: 8px 50px;
 }
 
-.search-results {
+.catalog-hotels {
   display: flex;
+  justify-content: space-between;
+  padding: 50px 70px 0;
+  margin: 0;
 }
 
-.search-results-number {
+.container-results {}
+
+.results {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 20px;
   text-transform: uppercase;
 }
 
+.container-select {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 522px;
+}
+
 .select-control {
-  margin-left: 202px;
+  padding: 20px 108px 10px 19px;
+  width: 293px;
   font-size: 18px;
   color: #333333;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   line-height: 21px;
+  border: 2px solid #e6e6e6;
   border-radius: 4px;
+  appearance: none;
+  background-image: url(../images/v.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  background-position: top 18px right 19px;
+}
+
+.button-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 8px;
+}
+
+.button-card {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 49px;
+  border-radius: 4px;
+  background-image: url(../images/card.svg);
+}
+
+.button-card-selected {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 49px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background-image: url(../images/selected-card.svg);
+}
+
+.button-card-list {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 49px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background-image: url(../images/li.svg);
 }
 
 .hotels-type {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 18px;
+  padding: 40px 69px 19px;
 }
 
 .hotel-list {
-  padding: 20px;
-  border-radius: 4px;
-  border: 1px solid #e6e6e6;
-  width: 300px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  min-height: 395px;
+  list-style: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 20px;
 }
 
 .hotel-link {
   display: block;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 22px;
-  color: #000000;
 }
 
-.hotel-title {}
+.hotel-title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 11px;
+  width: 300px;
+}
 
-.prices {}
+.prices {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-bottom: 16px;
+}
 
 .hotel-price {}
 
