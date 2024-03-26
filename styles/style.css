@@ -1752,7 +1752,6 @@ html {
 
 .date:hover {
   background-color: #e6e6e6;
-  opacity: 0.6;
 }
 
 .date:focus {
@@ -1786,6 +1785,7 @@ html {
   margin-bottom: 40px;
   display: flex;
   width: 577px;
+  justify-content: space-between;
 }
 
 .visitors {
@@ -1803,7 +1803,7 @@ html {
 }
 
 .container-number {
-  width: 121px;
+  width: 134px;
   background-color: #f2f2f2;
 }
 
@@ -1851,4 +1851,8 @@ html {
   line-height: 24px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.visitors-children {
+  display: flex;
 }
