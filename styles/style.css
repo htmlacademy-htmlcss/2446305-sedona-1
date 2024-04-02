@@ -337,6 +337,11 @@ html {
   width: 1200px;
 }
 
+.advantages-image {
+  display: block;
+  height: 100%;
+}
+
 .container-advantages {
   background-color: #82b3d3;
   width: 400px;
@@ -616,16 +621,15 @@ html {
 }
 
 .field:hover {
-  border: 2px solid #68a2ca;
+  outline: 2px solid #68a2ca;
 }
 
 .field:focus {
-  border: 2px solid #68a2ca;
-  outline: none;
+  outline: 2px solid #68a2ca;
 }
 
 .field:active {
-  border: 2px solid #3f5e72;
+  outline: 2px solid #3f5e72;
 }
 
 .button-subscribe {
@@ -1377,8 +1381,18 @@ html {
   width: 300px;
 }
 
+.hotel-image:hover {
+  transition: all 0.5s ease;
+}
+
+.hotel-link:hover .hotel-image {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
 .hotel-link:focus .hotel-image {
   opacity: 0.6;
+  transform: scale(1.05);
 }
 
 .hotel-link:focus {
@@ -1388,7 +1402,6 @@ html {
 .hotel-link:focus .hotel-title {
   color: #756157;
 }
-
 
 .prices {
   display: flex;
@@ -1723,7 +1736,15 @@ html {
 .container-modal {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 13px;
+}
+
+.container-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
 }
 
 .modal-form-label {
@@ -1731,7 +1752,6 @@ html {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-
 }
 
 .date {
@@ -1747,7 +1767,7 @@ html {
   font-size: 18px;
   background-image: url(../images/calendar.svg);
   background-repeat: no-repeat;
-  background-position: bottom 18px right 21px;
+  background-position: bottom 14px right 21px;
 }
 
 .date:hover {
@@ -1764,8 +1784,8 @@ html {
 }
 
 .comment {
-  margin: 4px 0 24px 157px;
-  padding: 0;
+  margin: 4px 0 20px 0;
+  padding-left: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1774,8 +1794,8 @@ html {
 
 .departure-comment {
   color: #000000;
-  margin: 3px 0 30px 158px;
-  padding: 0;
+  margin: 3px 0 30px 0;
+  padding-left: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1798,13 +1818,16 @@ html {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  align-self: center;
+  align-self: flex-start;
   text-transform: capitalize;
+  display: block;
+  padding-top: 11px;
 }
 
 .container-number {
-  width: 134px;
+  /*width: 134px;/*/
   background-color: #f2f2f2;
+  display: flex;
 }
 
 .minus {
@@ -1813,10 +1836,32 @@ html {
   border: none;
   width: 40px;
   height: 48px;
+  cursor: pointer;
+  position: relative;
 }
 
-.minus-image {
-  opacity: 0.3;
+.minus::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.minus:hover::before {
+  border: none;
+}
+
+.minus:focus::before {
+  border: 3px solid #82b3d3;
+}
+
+.minus:active::before {
+  border: none;
+  opacity: 0.2;
 }
 
 .adults {
@@ -1825,7 +1870,18 @@ html {
   background-color: #f2f2f2;
   border: none;
   width: 31px;
-  height: 42px;
+  height: 48px;
+  text-align: center;
+}
+
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-number {
+  -moz-appearance: textfield;
 }
 
 .plus {
@@ -1834,16 +1890,38 @@ html {
   border: none;
   width: 40px;
   height: 48px;
+  cursor: pointer;
+  position: relative;
 }
 
-.plus-image {
-  opacity: 0.3;
+.plus::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  left: 8px;
+  top: 10px;
+}
+
+.plus:hover::before {
+  border: none;
+}
+
+.plus:focus::before {
+  border: 3px solid #82b3d3;
+}
+
+.plus:active::before {
+  border: none;
+  opacity: 0.2;
 }
 
 .button-modal {
   width: 577px;
   padding: 18px 77px;
-  background: #83B3D3;
+  background: #83b3d3;
   border-radius: 10px;
   border: none;
   font-weight: 700;
@@ -1851,8 +1929,84 @@ html {
   line-height: 24px;
   text-transform: uppercase;
   color: #FFFFFF;
+  cursor: pointer;
+}
+
+.button-modal:hover {
+  background: #68a2ca;
+}
+
+.button-modal:focus {
+  background: #68a2ca;
+  outline: none;
+}
+
+.button-modal:active {
+  background: #83b3d3;
+  color: rgba(255, 255, 255, 0.302);
 }
 
 .visitors-children {
   display: flex;
+  width: 242px;
+}
+
+.tultip {
+  position: absolute;
+  margin-left: 58px;
+  margin-top: 8px;
+}
+
+.tultip:hover .tultip-container {
+  display: block;
+}
+
+.tultip:focus-within .tultip-container s {
+  display: block;
+}
+
+.tultip-toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tultip-icon {
+  display: block;
+}
+
+.tultip-container {
+  position: absolute;
+  left: -112px;
+  top: 100%;
+  display: none;
+  padding-top: 25px;
+}
+
+.tultip-text {
+  box-sizing: border-box;
+  padding: 20px;
+  color: #ffffff;
+  background: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 256px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  position: relative;
+  display: block;
+}
+
+.tultip-text::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/modal-triangle.svg);
+  width: 19px;
+  height: 9px;
+  left: 117px;
+  top: -9px;
 }

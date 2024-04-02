@@ -4,7 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="favicon.ico" >
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
   </head>
 
   <body class="body">
@@ -85,7 +86,7 @@
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item-blue">
-              <img src="./images/photo-2.jpg" alt="Мост дьявола" width="800" height="385" class="description-image">
+              <img class="advantages-image " src="./images/photo-2.jpg" alt="Мост дьявола" width="800" height="385">
               <div class="container-advantages">
                 <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -223,16 +224,20 @@
           <form class="modal-form" method="post">
             <div class="container-modal">
               <label class="modal-form-label" for="arrival-date"> Дата Заезда:</label>
-              <input type="text" id="arrival-date" class="date" placeholder="Укажите дату заезда"
-                value="27 апреля 2020">
+              <div class="modal-input-container">
+                <input type="text" id="arrival-date" class="date" placeholder="Укажите дату заезда"
+                  value="27 апреля 2020">
+                <p class="comment">Мы не можем отправить вас в прошлое.</p>
+              </div>
             </div>
-            <p class="comment">Мы не можем отправить вас в прошлое.</p>
             <div class="container-modal">
               <label class="modal-form-label" for="departure-date"> Дата Выезда:</label>
-              <input type="text" id="departure-date" class="date" placeholder="Укажите датц выезда"
-                value="1 сентября 2023">
+              <div class="modal-input-container">
+                <input type="text" id="departure-date" class="date" placeholder="Укажите дату выезда"
+                  value="1 сентября 2023">
+                <p class="departure-comment">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
             </div>
-            <p class="departure-comment">На эти даты есть свободные номера. Пока есть.</p>
           </form>
           <div class="container-visitors">
             <div class="visitors">
@@ -244,8 +249,8 @@
                     <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3" />
                   </svg>
                 </button>
-                <input type="number" name="number" min="0" id="adults" class="adults" placeholder="Введите количество"
-                  value="2">
+                <input type="number" name="number" min="0" id="adults" class="adults input-number"
+                  placeholder="Введите количество" value="2">
                 <button class="plus">
                   <svg class="plus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -256,14 +261,30 @@
             </div>
             <div class="visitors-children">
               <label class="modal-form-label" for="children">Дети:</label>
+              <span class="tultip">
+                <button class="tultip-toggle" type="button">
+                  <svg class="tultip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <span class="tultip-container">
+                  <span class="tultip-text">
+                    "Укажите количество детей, которые будут с вами,возраст которых от 6 до 18 лет. Дети до 6 лет
+                    размещаются бесплатно."
+                  </span>
+                </span>
+              </span>
               <div class="container-number">
                 <button class="minus">
                   <svg class="minus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3" />
-                </svg>
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3" />
+                  </svg>
                 </button>
-                <input type="number" name="number" id="adults" class="adults" placeholder="2">
+                <input class="adults input-number" type="number" name="number" id="children" placeholder="2">
                 <button class="plus">
                   <svg class="plus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -273,8 +294,7 @@
               </div>
             </div>
           </div>
-            <button class="button-modal" type="submit">Найти</button>
-          </form>
+          <button class="button-modal" type="submit">Найти</button>
         </section>
       </div>
     </div>
