@@ -297,7 +297,7 @@ html {
 }
 
 .slogan {
-  margin: 0 0 24px;
+  margin: 0 auto 24px;
   font-size: 30px;
   font-weight: 700;
   line-height: 37px;
@@ -305,19 +305,17 @@ html {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  max-width: 660px;
 }
 
 .advantages-text {
-  margin: 0;
+  margin: 0 auto;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  color: #000000;
   text-decoration: none;
-  width: 1200px;
-  text-align: center;
+  max-width: 660px;
   padding-bottom: 90px;
-  width: 600;
   text-align: center;
 }
 
@@ -600,7 +598,7 @@ html {
   width: 684px;
   display: flex;
   text-align: center;
-  margin-top: 53px;
+  margin-top: 54px;
   border: none;
 }
 
@@ -634,6 +632,7 @@ html {
 
 .button-subscribe {
   color: #ffffff;
+  width: 232px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -732,6 +731,8 @@ html {
   text-decoration: none;
   font-family: "PT Sans", "Arial", sans-serif;
   padding-top: 10px;
+  padding-left: 149px;
+  padding-right: 150px;
 }
 
 .phone-button:hover {
@@ -979,6 +980,10 @@ html {
   opacity: 0.3;
 }
 
+.checkbox-input:disabled + .checkbox-label {
+  opacity: 0.3;
+}
+
 .control-input {}
 
 .control {
@@ -1038,6 +1043,10 @@ html {
   opacity: 0.3;
 }
 
+.control-input:disabled + .control {
+  opacity: 0.3;
+}
+
 .cost {
   display: flex;
   position: relative;
@@ -1057,8 +1066,8 @@ html {
   font-weight: 700;
 }
 
-.cost-from :hover {
-  outline: 2px solid #e6e6e6;
+.cost-from:hover {
+  background-color: #e6e6e6;
 }
 
 .cost-from:focus {
@@ -1089,7 +1098,7 @@ html {
 }
 
 .cost-till:hover {
-  outline: 2px solid #e6e6e6;
+  background-color: #e6e6e6;
 }
 
 .cost-till:focus {
@@ -1336,7 +1345,6 @@ html {
 
 .view-button-tile {
   background-image: url("../images/card.svg");
-  border: 2px solid #000000;
 }
 
 .view-button-card {
@@ -1345,6 +1353,10 @@ html {
 
 .view-button-list {
   background-image: url("../images/li.svg");
+}
+
+.view-button-active {
+  border-color: #000000;
 }
 
 .hotels-type {
@@ -1413,7 +1425,7 @@ html {
   display: flex;
   justify-content: space-between;
   width: 300px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .hotel-price {
@@ -1436,7 +1448,6 @@ html {
   text-decoration: none;
   border-radius: 4px;
   width: 140px;
-  height: 36px;
   background-color: #756157;
   color: #ffffff;
   font-weight: 700;
