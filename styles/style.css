@@ -445,7 +445,7 @@ html {
   width: 400px;
   padding-top: 180px;
   padding-bottom: 81px;
-  background-image: url(../images/house.svg);
+  background-image: url("../images/house.svg");
   background-repeat: no-repeat;
   background-position: center 83px;
   text-align: 10px center;
@@ -456,15 +456,15 @@ html {
 }
 
 .recomendation-item-house {
-  background-image: url(../images/house.svg);
+  background-image: url("../images/house.svg");
 }
 
 .recomendation-item-food {
-  background-image: url(../images/hamburger.svg);
+  background-image: url("../images/hamburger.svg");
 }
 
 .recomendation-item-present {
-  background-image: url(../images/present.svg);
+  background-image: url("../images/present.svg");
 }
 
 .recommendation-title {
@@ -774,7 +774,7 @@ html {
 
 .inner-header {
   background-color: #156194;
-  background-image: url(../images/foto-catalog.jpg);
+  background-image: url("../images/foto-catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px 70px 53px 70px;
@@ -810,7 +810,7 @@ html {
   content: "";
   width: 12px;
   height: 12px;
-  background-image: url(../images/next.svg);
+  background-image: url("../images/next.svg");
   top: 5px;
   right: 0;
   position: absolute;
@@ -1135,8 +1135,6 @@ html {
   z-index: 10;
 }
 
-.handler:hover {}
-
 .handler:focus {
   outline: #82b3d3 solid 3px;
 }
@@ -1175,7 +1173,6 @@ html {
   width: 191px;
   display: block;
   text-decoration: none;
-  text-align: center;
   cursor: pointer;
 }
 
@@ -1212,7 +1209,6 @@ html {
   width: 191px;
   display: block;
   text-decoration: none;
-  text-align: center;
   padding: 8px 10px;
   cursor: pointer;
 }
@@ -1272,7 +1268,7 @@ html {
   border: 2px solid #e6e6e6;
   border-radius: 4px;
   appearance: none;
-  background-image: url(../images/v.svg);
+  background-image: url("../images/v.svg");
   background-repeat: no-repeat;
   background-size: 11px 10px;
   background-position: top 18px right 19px;
@@ -1352,7 +1348,6 @@ html {
   margin: 0;
   width: 300px;
   min-height: 395px;
-  list-style: none;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
@@ -1527,8 +1522,7 @@ html {
 .stars-raiting {
   margin: 8px 0;
   height: 17px;
-  background: url(../images/star.svg) space 0 0;
-
+  background: url("../images/star.svg") space 0 0;
 }
 
 .stars-raiting-one {
@@ -1767,7 +1761,7 @@ html {
   background-color: #f2f2f2;
   font-weight: 700;
   font-size: 18px;
-  background-image: url(../images/calendar.svg);
+  background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: bottom 14px right 21px;
 }
@@ -2031,7 +2025,7 @@ html {
 .tultip-text::after {
   content: "";
   position: absolute;
-  background-image: url(../images/modal-triangle.svg);
+  background-image: url("../images/modal-triangle.svg");
   width: 19px;
   height: 9px;
   left: 117px;
