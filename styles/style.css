@@ -76,8 +76,6 @@ html {
   opacity: 0.1;
 }
 
-.logo-img {}
-
 .nav {
   margin: 0 auto;
   padding: 0;
@@ -98,8 +96,6 @@ html {
   width: 500px;
   flex-wrap: wrap;
 }
-
-.main-menu-item {}
 
 .main-menu-link {
   color: #000000;
@@ -149,8 +145,6 @@ html {
   row-gap: 10px;
 }
 
-.user-menu-item {}
-
 .user-menu-link-search {
   width: 44px;
   height: 64px;
@@ -161,10 +155,7 @@ html {
   text-decoration: none;
   background-position: center center;
   display: block;
-
 }
-
-.search-menu {}
 
 .user-menu-link-search:hover {
   color: #535353;
@@ -259,7 +250,6 @@ html {
   right: 4px;
   font-family: "PT Sans", "Arial", sans-serif;
 }
-
 
 .page-main {
   margin: 0;
@@ -683,8 +673,6 @@ html {
   padding-top: 11px;
 }
 
-.footer-social-item {}
-
 .footer-link {
   width: 47px;
   height: 40px;
@@ -718,8 +706,6 @@ html {
 .text-item {
   padding-top: 14px;
 }
-
-.phone-item {}
 
 .phone-button {
   display: block;
@@ -869,7 +855,6 @@ html {
   font-size: 16px;
 }
 
-
 .breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -881,9 +866,6 @@ html {
 .breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
-
-
-.catalog-products {}
 
 .catalog-filter {
   margin: 0 auto;
@@ -983,8 +965,6 @@ html {
 .checkbox-input:disabled + .checkbox-label {
   opacity: 0.3;
 }
-
-.control-input {}
 
 .control {
   padding-left: 38px;
@@ -1261,8 +1241,6 @@ html {
   padding: 50px 70px 0;
   margin: 0;
 }
-
-.container-results {}
 
 .results {
   padding: 0;
@@ -1740,8 +1718,6 @@ html {
   opacity: 0.3;
 }
 
-.modal-conent {}
-
 .modal-title {
   text-transform: uppercase;
   font-weight: 700;
@@ -1854,7 +1830,6 @@ html {
 }
 
 .container-number {
-  /*width: 134px;/*/
   background-color: #f2f2f2;
   display: flex;
 }
