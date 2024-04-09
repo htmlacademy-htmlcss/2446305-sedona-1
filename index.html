@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="favicon.ico" >
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
-
   <body class="body">
     <div class="container">
       <header class="main-header">
         <a href="#" class="logo-link">
-          <img src="./images/logo-1.svg" alt="Логотип сайта городка Седона" class="logo-img">
+          <img src="./images/logo-1.svg" alt="Логотип сайта городка Седона" class="logo-img" width="140" height="70">
         </a>
         <nav class="nav">
           <ul class="main-menu">
@@ -63,13 +62,13 @@
             class="welcome-quote-image">
         </section>
         <section class="advantages">
-          <h2 class="slogan">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+          <h2 class="slogan">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
           <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="advantages-list">
             <li class="advantages-item-blue">
               <div class="container-advantages">
                 <h3 class="advantages-title">Настоящий городок</h3>
-                <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="advantages-description">Седона — не аттракцион для туристов,там течёт своя жизнь</p>
               </div>
               <img class="advantages-image" src="./images/photo-1.jpg" alt="Мэрия Седоны" width="800" height="385">
             </li>
@@ -221,84 +220,82 @@
         </button>
         <section class="modal-conent">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="modal-form" method="post">
+          <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
             <div class="container-modal">
               <label class="modal-form-label" for="arrival-date"> Дата Заезда:</label>
               <div class="modal-input-container">
-                <input type="text" id="arrival-date" class="date" placeholder="Укажите дату заезда"
+                <input type="text" id="arrival-date" name="arrival-date" class="date" placeholder="Укажите дату заезда"
                   value="27 апреля 2020">
-                <p class="comment">Мы не можем отправить вас в прошлое.</p>
+                <p class="comment comment-error">Мы не можем отправить вас в прошлое.</p>
               </div>
             </div>
-            <div class="container-modal">
+            <div class="container-modal container-modal-departure">
               <label class="modal-form-label" for="departure-date"> Дата Выезда:</label>
               <div class="modal-input-container">
-                <input type="text" id="departure-date" class="date" placeholder="Укажите дату выезда"
-                  value="1 сентября 2023">
-                <p class="departure-comment">На эти даты есть свободные номера. Пока есть.</p>
+                <input type="text" id="departure-date" name="departure-date" class="date"
+                  placeholder="Укажите дату выезда" value="1 сентября 2023">
+                <p class="comment">На эти даты есть свободные номера. Пока есть.</p>
               </div>
             </div>
-          </form>
-          <div class="container-visitors">
-            <div class="visitors">
-              <label class="modal-form-label" for="adults">Взрослыe:</label>
-              <div class="container-number">
-                <button class="minus">
-                  <svg class="minus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3" />
-                  </svg>
-                </button>
-                <input type="number" name="number" min="0" id="adults" class="adults input-number"
-                  placeholder="Введите количество" value="2">
-                <button class="plus">
-                  <svg class="plus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3" />
-                  </svg>
-                </button>
+            <div class="container-visitors">
+              <div class="visitors">
+                <label class="modal-form-label" for="adults">Взрослыe:</label>
+                <div class="container-number">
+                  <button class="minus-plus">
+                    <svg class="minus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                    </svg>
+                  </button>
+                  <input type="number" name="adults" min="0" id="adults" class="adults input-number" value="2">
+                  <button class="minus-plus">
+                    <svg class="plus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="visitors-children">
-              <label class="modal-form-label" for="children">Дети:</label>
-              <span class="tultip">
-                <button class="tultip-toggle" type="button">
-                  <svg class="tultip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
-                      fill="white" />
-                  </svg>
-                </button>
-                <span class="tultip-container">
-                  <span class="tultip-text">
-                    "Укажите количество детей, которые будут с вами,возраст которых от 6 до 18 лет. Дети до 6 лет
-                    размещаются бесплатно."
+              <div class="visitors-children">
+                <label class="modal-form-label" for="children">Дети:</label>
+                <span class="tultip">
+                  <button class="tultip-toggle" type="button">
+                    <svg class="tultip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                        fill="white" />
+                    </svg>
+                  </button>
+                  <span class="tultip-container">
+                    <span class="tultip-text">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                      размещаются бесплатно.
+                    </span>
                   </span>
                 </span>
-              </span>
-              <div class="container-number">
-                <button class="minus">
-                  <svg class="minus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3" />
-                  </svg>
-                </button>
-                <input class="adults input-number" type="number" name="number" id="children" placeholder="2">
-                <button class="plus">
-                  <svg class="plus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3" />
-                  </svg>
-                </button>
+                <div class="container-number">
+                  <button class="minus-plus">
+                    <svg class="minus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                    </svg>
+                  </button>
+                  <input class="adults input-number" type="number" name="children" id="children" value="2">
+                  <button class="minus-plus">
+                    <svg class="plus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <button class="button-modal" type="submit">Найти</button>
+            <button class="button-modal" type="submit">Найти</button>
+          </form>
         </section>
       </div>
     </div>
     <script src="./scripts/script.js"></script>
   </body>
-
 </html>
