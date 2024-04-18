@@ -561,7 +561,7 @@ html {
   line-height: 36px;
   color: #ffffff;
   text-align: center;
-  background-image: url("../images/Subscribe.jpg");
+  background-image: url("../images/subscribe.jpg");
   padding: 99px 258px 104px 258px;
   justify-content: center;
   align-items: center;
@@ -672,7 +672,7 @@ html {
   width: 141px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
