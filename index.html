@@ -209,7 +209,7 @@
     </div>
     <div class="modal modal-close">
       <div class="modal-container">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <svg class="cross-svg" width="14" height="20" viewBox="0 0 14 20" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -225,7 +225,7 @@
               <label class="modal-form-label" for="arrival-date"> Дата Заезда:</label>
               <div class="modal-input-container">
                 <input type="text" id="arrival-date" name="arrival-date" class="date" placeholder="Укажите дату заезда"
-                  value="27 апреля 2020">
+                  value="27 апреля 2020" required>
                 <p class="comment comment-error">Мы не можем отправить вас в прошлое.</p>
               </div>
             </div>
@@ -233,7 +233,7 @@
               <label class="modal-form-label" for="departure-date"> Дата Выезда:</label>
               <div class="modal-input-container">
                 <input type="text" id="departure-date" name="departure-date" class="date"
-                  placeholder="Укажите дату выезда" value="1 сентября 2023">
+                  placeholder="Укажите дату выезда" value="1 сентября 2023" required>
                 <p class="comment">На эти даты есть свободные номера. Пока есть.</p>
               </div>
             </div>
@@ -241,14 +241,14 @@
               <div class="visitors">
                 <label class="modal-form-label" for="adults">Взрослыe:</label>
                 <div class="container-number">
-                  <button class="minus-plus">
+                  <button class="minus-plus" type="button">
                     <svg class="minus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input type="number" name="adults" min="0" id="adults" class="adults input-number" value="2">
-                  <button class="minus-plus">
+                  <input type="number" name="adults" min="0" id="adults" class="adults input-number" value="2" required>
+                  <button class="minus-plus" type="button">
                     <svg class="plus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
@@ -260,6 +260,7 @@
                 <label class="modal-form-label" for="children">Дети:</label>
                 <span class="tultip">
                   <button class="tultip-toggle" type="button">
+                    <span class="visually-hidden">Открыть дополнительную информацию</span>
                     <svg class="tultip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="13" cy="13" r="13" fill="#83B3D3" />
@@ -275,14 +276,14 @@
                   </span>
                 </span>
                 <div class="container-number">
-                  <button class="minus-plus">
+                  <button class="minus-plus" type="button">
                     <svg class="minus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input class="adults input-number" type="number" name="children" id="children" value="2">
-                  <button class="minus-plus">
+                  <input class="adults input-number" type="number" name="children" id="children" value="2" required>
+                  <button class="minus-plus" type="button" >
                     <svg class="plus-image" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />

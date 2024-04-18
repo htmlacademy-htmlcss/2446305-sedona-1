@@ -120,7 +120,7 @@ html {
 
 .main-menu-link:active {
   color: #535353;
-  background-color: #68a3ca50;
+  background-color: rgba(104, 163, 202, 0.314);
 }
 
 .menu-active::after {
@@ -168,7 +168,7 @@ html {
 
 .user-menu-link-search:active {
   color: #535353;
-  background-color: #68a3ca5a;
+  background-color: rgba(104, 163, 202, 0.353);
   opacity: 0.3;
 }
 
@@ -197,7 +197,7 @@ html {
 
 .user-menu-link-favourite:active {
   color: #535353;
-  background-color: #68a3ca5a;
+  background-color: rgba(104, 163, 202, 0.353);
   opacity: 0.3;
 }
 
@@ -307,6 +307,7 @@ html {
   max-width: 660px;
   padding-bottom: 90px;
   text-align: center;
+  color: #333333;
 }
 
 .advantages-list {
@@ -484,12 +485,12 @@ html {
   font-weight: 400;
   line-height: 21px;
   text-align: center;
+  color: #333333;
 }
 
 .search {
   text-align: center;
   margin: 0;
-  padding: 0;
   margin-bottom: 0;
   padding: 34px 0 95px 0;
 }
@@ -534,6 +535,7 @@ html {
   display: inline-block;
   border: none;
   border-radius: 4px;
+  width: 376px;
 }
 
 .button-search:hover {
@@ -551,7 +553,7 @@ html {
 }
 
 .subscribe {
-  background-color: #82b3d3;
+  background-color: #286a96;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 30px;
@@ -559,7 +561,7 @@ html {
   line-height: 36px;
   color: #ffffff;
   text-align: center;
-  background-image: url("../images/Subscribe.jpg");
+  background-image: url("../images/subscribe.jpg");
   padding: 99px 258px 104px 258px;
   justify-content: center;
   align-items: center;
@@ -650,6 +652,11 @@ html {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button-subscribe:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
+
 .page-footer {
   background: #ffffff;
 }
@@ -665,7 +672,7 @@ html {
   width: 141px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -684,11 +691,11 @@ html {
 }
 
 .footer-link:hover {
-  color: #68A2CA;
+  color: #68a2ca;
 }
 
 .footer-link:focus {
-  color: #68A2CA;
+  color: #68a2ca;
   outline: none;
 }
 
@@ -709,6 +716,7 @@ html {
 
 .phone-button {
   display: block;
+  width: 500px;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
@@ -940,8 +948,8 @@ html {
   position: absolute;
   left: 4px;
   top: 6px;
-  border-left: 2px solid rgb(8, 56, 114);
-  border-bottom: 2px solid rgb(8, 56, 114);
+  border-left: 2px solid rgba(63, 94, 114, 1);
+  border-bottom: 2px solid rgba(63, 94, 114, 1);
   transform: rotate(-45deg);
   display: none;
 }
@@ -1044,6 +1052,7 @@ html {
   padding: 15px 20px 12px 21px;
   font-size: 18px;
   font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .cost-from:hover {
@@ -1075,6 +1084,7 @@ html {
   padding: 14px 11px 11px 21px;
   font-size: 18px;
   font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .cost-till:hover {
@@ -1163,7 +1173,7 @@ html {
   color: #ffffff;
   padding: 8px 10px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
@@ -1174,6 +1184,7 @@ html {
   display: block;
   text-decoration: none;
   cursor: pointer;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .apply:hover {
@@ -1191,7 +1202,8 @@ html {
 }
 
 .apply:disabled {
-  opacity: 0.1;
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .reset {
@@ -1199,7 +1211,7 @@ html {
   background: transparent;
   margin-top: 33px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
@@ -1211,6 +1223,7 @@ html {
   text-decoration: none;
   padding: 8px 10px;
   cursor: pointer;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .reset:hover {
@@ -1219,7 +1232,7 @@ html {
 
 .reset:focus {
   background: transparent;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .reset:active {
@@ -1272,6 +1285,7 @@ html {
   background-repeat: no-repeat;
   background-size: 11px 10px;
   background-position: top 18px right 19px;
+  background-color: #ffffffff;
 }
 
 .select-control:hover {
@@ -1404,10 +1418,12 @@ html {
 
 .hotel-price {
   margin: 0;
+  color: #333333;
 }
 
 .start-price {
   margin: 0;
+  color: #333333;
 }
 
 .card-container {
@@ -1449,6 +1465,7 @@ html {
 
 .hotel-details:disabled {
   background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .hotel-favorites {
@@ -1483,6 +1500,7 @@ html {
 
 .hotel-favorites:disabled {
   background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .raiting {
@@ -1517,6 +1535,11 @@ html {
 .green:active {
   background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.green:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .stars-raiting {
@@ -1838,6 +1861,7 @@ html {
   cursor: pointer;
   position: relative;
   color: rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2f2;
 }
 
 .minus-plus:hover {
@@ -1936,6 +1960,7 @@ html {
 }
 
 .button-modal {
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 577px;
   padding: 18px 77px;
   background: #83b3d3;
@@ -1945,7 +1970,7 @@ html {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -1961,6 +1986,11 @@ html {
 .button-modal:active {
   background: #83b3d3;
   color: rgba(255, 255, 255, 0.302);
+}
+
+.button-modal:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .visitors-children {
@@ -1992,8 +2022,18 @@ html {
   border-radius: 50%;
 }
 
+.tultip-toggle:hover {
+  outline: #6a94af;
+}
+
 .tultip-toggle:focus {
-  outline: none;
+  outline: #82b3d3 solid 1px;
+  opacity: 0.3;
+}
+
+.tultip-toggle:active {
+  outline: #82b3d3 solid 1px;
+  opacity: 0.3;
 }
 
 .tultip-icon {
@@ -2020,6 +2060,7 @@ html {
   line-height: 20px;
   position: relative;
   display: block;
+  right: 115px;
 }
 
 .tultip-text::after {
